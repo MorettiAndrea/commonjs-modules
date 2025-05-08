@@ -4,6 +4,6 @@ const personHobbies = () => {
   const thirdHobby = "Music";
   return { firstHobby, secondHobby, thirdHobby };
 };
-console.log(personHobbies());
+personHobbies();
 
-module.export = { personHobbies };
+module.exports = { personHobbies };
