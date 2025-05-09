@@ -1,11 +1,11 @@
-const personNames = require("./names");
-const personHobbies = require("./hobbies");
+const { personNames } = require("./names");
+const { personHobbies } = require("./hobbies");
 
 const person = () => {
-  const actualNames = personNames;
-  const actualHobbies = personHobbies;
-  return { actualNames, actualHobbies };
+  const actualName = personNames("Andrea", "Moretti");
+  const actualHobbies = personHobbies("training", "videogames", "music");
+  return { actualName, actualHobbies };
 };
-personNames();
-personHobbies();
-person();
+
+const actualPerson = person();
+console.log(actualPerson);
